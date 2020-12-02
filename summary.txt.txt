@@ -1,0 +1,24 @@
+Project Travel Dashboard
+
+* Summary of Project *
+The goal of the project is to allow users to create personal, easy to read trip plans. 
+A typical travel plan would be created in a spreadsheet, and we all know those can sometimes
+be painful to look at. Not only that but it isn't as appealing to the eye. I want to create this
+project to make trip planning easier and better visually. The goal is to have a user be able to 
+create as many trips as they like, and to freely plan their trip, from the budget, to the day to 
+day activities.
+
+P0: 
+    - Implement User registration/authentication with MongoDB
+    - CRUD Operations for trips, to dos, itinerary days
+P1: 
+    - Create a responsive layout, desktop-first to mobile
+    - Access a weather API to show current weather for place of travel
+P2: 
+    - Allow users to invite others to plan the trip
+    - Chatbox board to allow users to communicate and leave messages
+P3: 
+    - Socket.io implementation for real-time editing with another user
+
+
+Protoype in Adobe XD: https://xd.adobe.com/view/50c45e25-2a6b-4ca7-ab3c-cabb247fe2fd-0597/?fullscreen
