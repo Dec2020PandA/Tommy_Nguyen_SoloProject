@@ -9,7 +9,7 @@ import TodoView from "./views/TodoView";
 
 function App() {
   return (
-    <div className="App">
+    <div className="container">
       <Router>
         <Main default />
         <DashboardView path="/dashboard" />
