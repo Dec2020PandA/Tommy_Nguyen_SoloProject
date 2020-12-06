@@ -13,12 +13,16 @@ export default () => {
   const registerUser = (event) => {
     event.preventDefault();
     axios
-      .post("http://localhost:8000/api/register", {
-        email,
-        firstName,
-        lastName,
-        password,
-      })
+      .post(
+        "http://localhost:8000/api/register",
+        {
+          email,
+          firstName,
+          lastName,
+          password,
+        },
+        { withCredentials: true }
+      )
       .then((res) => {
         if (res.data.errors) {
           setErrors(res.data.errors);

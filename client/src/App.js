@@ -12,7 +12,7 @@ function App() {
     <div className="container">
       <Router>
         <Main default />
-        <DashboardView path="/dashboard" />
+        <DashboardView path="/dashboard/:id" />
         <ItineraryView path="/dashboard/itinerary" />
         <BudgetView path="/dashboard/budget" />
         <TodoView path="/dashboard/todo" />

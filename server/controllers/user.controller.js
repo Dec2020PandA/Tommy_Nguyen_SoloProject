@@ -1,11 +1,20 @@
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 
+const { secret } = require("../config/jwt.config");
+require("dotenv").config();
+
 const { User } = require("../models/user.model");
 
 module.exports.getUsers = (req, res) => {
   User.find({})
     .then((users) => res.json(users))
+    .catch((err) => res.json(err));
+};
+
+module.exports.getUser = (req, res) => {
+  User.find({ _id: req.params.id })
+    .then((user) => res.json(user))
     .catch((err) => res.json(err));
 };
 
@@ -54,11 +63,12 @@ module.exports.login = async (req, res) => {
   );
 
   //note that response object allows chained calls to cookie and json
+  //Sends if successful login
   res
     .cookie("usertoken", userToken, secret, {
       httpOnly: true,
     })
-    .json({ msg: "success!" });
+    .json({ msg: user._id });
 };
 
 module.exports.logout = (req, res) => {
