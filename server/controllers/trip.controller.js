@@ -6,6 +6,14 @@ module.exports.getTrips = (req, res) => {
     .catch((err) => res.json(err));
 };
 
+module.exports.getTripsByUser = (req, res) => {
+  Trip.find({
+    user: req.params.id,
+  })
+    .then((trips) => res.json(trips))
+    .catch((err) => res.json(err));
+};
+
 module.exports.getTrip = (req, res) => {
   Trip.find({ _id: req.params.id })
     .then((trip) => res.json(trip))

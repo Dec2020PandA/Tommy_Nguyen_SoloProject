@@ -54,6 +54,11 @@ const TripSchema = new mongoose.Schema({
   itinerary: [ItinerarySchema],
   todo: [TodoSchema],
   expenses: [ExpenseSchema],
+  userId: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: "User",
+    required: true,
+  },
 });
 
 mongoose.exports.Trip = mongoose.model("Trip", TripSchema);
