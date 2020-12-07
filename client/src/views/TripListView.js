@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "@reach/router";
+
 import TripList from "../components/TripList";
 import axios from "axios";
 
@@ -29,8 +31,15 @@ export default (props) => {
   console.log(user);
   console.log(trips);
   return (
-    <div>
-      <h1>Hello {user.firstName}!</h1>
+    <div className="container-md mt-4 ">
+      <div className="d-flex justify-content-between align-items-center border-bottom">
+        <h1>{user.firstName}'s Trips</h1>
+        <Link to="/trip/new">
+          <button className="d-inline-block btn btn-sm btn-primary h-75 ">
+            Add Trip
+          </button>
+        </Link>
+      </div>
       {loaded && <TripList trips={trips} />}
     </div>
   );
