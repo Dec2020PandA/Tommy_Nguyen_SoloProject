@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-
+import TripList from "../components/TripList";
 import axios from "axios";
 
 export default (props) => {
@@ -30,11 +30,8 @@ export default (props) => {
   console.log(trips);
   return (
     <div>
-      {loaded && (
-        <h1>
-          {user.firstName + " " + user.lastName} {trips.length}
-        </h1>
-      )}
+      <h1>Hello {user.firstName}!</h1>
+      {loaded && <TripList trips={trips} />}
     </div>
   );
 };
