@@ -8,7 +8,7 @@ module.exports.getTrips = (req, res) => {
 
 module.exports.getTripsByUser = (req, res) => {
   Trip.find({
-    user: req.params.id,
+    userId: req.params.id,
   })
     .then((trips) => res.json(trips))
     .catch((err) => res.json(err));

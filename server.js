@@ -17,6 +17,7 @@ app.use(cookieParser());
 //Require routes
 //Users
 require("./server/routes/user.routes")(app);
+require("./server/routes/trip.routes")(app);
 
 app.listen(8000, () => {
   console.log("Listening at port 8000");
