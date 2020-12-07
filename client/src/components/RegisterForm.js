@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "@reach/router";
+import { Link, navigate } from "@reach/router";
 import axios from "axios";
 
 export default () => {
@@ -28,11 +28,7 @@ export default () => {
           setErrors(res.data.errors);
           console.log(errors);
         } else {
-          setEmail("");
-          setFirstName("");
-          setLastName("");
-          setPassword("");
-          setConfirmPassword("");
+          navigate("/login");
         }
         console.log(res.data);
       })

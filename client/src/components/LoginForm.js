@@ -20,7 +20,7 @@ export default () => {
       )
       .then((res) => {
         console.log(res.data);
-        navigate(`/dashboard/${res.data.msg}`);
+        navigate(`/user/${res.data.msg}/trips`);
       })
       .catch((err) => console.log(err));
   };
