@@ -28,5 +28,10 @@ export default (props) => {
   }, []);
 
   console.log(trip);
-  return <div>{loaded && <h1>{user.firstName + " " + trip.tripName}</h1>}</div>;
+  return (
+    <div>
+      <h1>Dash</h1>
+      {loaded && <Dashboard trip={trip} />}
+    </div>
+  );
 };
