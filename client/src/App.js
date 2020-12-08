@@ -14,9 +14,9 @@ function App() {
     <div className="container">
       <Router>
         <Main default />
-        <DashboardView path="/trip/dashboard/:id" />
+        <DashboardView path="/user/:id/trips/:tripId/dashboard/" />
         <TripListView path="/user/:id/trips" />
-        <AddTripView path="/trip/new" />
+        <AddTripView path="/user/:id/trips/new" />
         <ItineraryView path="/dashboard/itinerary" />
         <BudgetView path="/dashboard/budget" />
         <TodoView path="/dashboard/todo" />

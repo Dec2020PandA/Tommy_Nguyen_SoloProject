@@ -9,7 +9,9 @@ export default (props) => {
       <ul className="list-group list-group-flush">
         {tripList.map((trip, index) => (
           <div key={index} className="list-group-item">
-            <Link to={`/trip/dashboard/${trip._id}`}>{trip.tripName}</Link>
+            <Link to={`/user/${props.userId}/trips/${trip._id}/dashboard`}>
+              {trip.tripName}
+            </Link>
           </div>
         ))}
       </ul>
