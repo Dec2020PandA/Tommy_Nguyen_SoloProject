@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Dashboard from "../components/Dashboard";
+import SideBar from "../components/Sidebar";
 
 import axios from "axios";
 
@@ -29,8 +30,8 @@ export default (props) => {
 
   console.log(trip);
   return (
-    <div>
-      <h1>Dash</h1>
+    <div className="d-flex">
+      <SideBar />
       {loaded && <Dashboard trip={trip} />}
     </div>
   );

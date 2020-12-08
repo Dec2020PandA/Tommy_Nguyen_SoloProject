@@ -11,7 +11,7 @@ import TodoView from "./views/TodoView";
 
 function App() {
   return (
-    <div className="container">
+    <div>
       <Router>
         <Main default />
         <DashboardView path="/user/:id/trips/:tripId/dashboard/" />
