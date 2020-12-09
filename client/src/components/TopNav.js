@@ -5,7 +5,7 @@ import styles from "../css-modules/TopNav.module.css";
 export default (props) => {
   return (
     <div className={`pt-3 pl-4 pr-4 ${styles.topNav}`}>
-      <h1>{props.tripName}</h1>
+      <h1 className={styles.tripName}>{props.tripName}</h1>
 
       <div className={styles.profileGroup}>
         <div className={styles.profileText}>
@@ -14,7 +14,10 @@ export default (props) => {
             <p className={styles.settingsBtn}>Settings</p>
           </a>
         </div>
-        <p className={styles.profileImage}>Image</p>
+        <img
+          className={styles.profileImage}
+          src="https://cdn.dribbble.com/users/926776/screenshots/14351151/miles_morales_4x.png"
+        />
       </div>
     </div>
   );

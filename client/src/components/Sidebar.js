@@ -5,7 +5,7 @@ import styles from "../css-modules/Sidebar.module.css";
 
 export default () => {
   return (
-    <div className={`d-flex flex-column pt-3 pl-3 pr-3 ${styles.sideBar}`}>
+    <div className={`pt-3 pl-3 pr-3 ${styles.sideBar}`}>
       <h1 className="mb-4">LOGO</h1>
       <Link to="/">
         <button className={`${styles.navBtn}`}>Overview</button>

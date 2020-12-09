@@ -7,6 +7,11 @@
   align-items: center;
 }
 
+.tripName {
+  font-size: 1.4em;
+  font-weight: 600;
+}
+
 .profileGroup {
   display: flex;
 }
@@ -20,7 +25,7 @@
 
 .userName {
   font-weight: 600;
-  font-size: 2rem;
+  font-size: 1.2em;
 }
 
 a {
@@ -40,4 +45,14 @@ a {
 
 .profileImage {
   margin-left: 1.2rem;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  border: 3px solid #6e56ce;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.profileImage:hover {
+  border: 3px solid #fff;
 }

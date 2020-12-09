@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 
+import ItineraryBoard from "../components/ItineraryBoard";
+
 export default (props) => {
   const [trip, setTrip] = useState(props.trip);
 
@@ -18,19 +20,7 @@ export default (props) => {
       </div>
 
       <div>
-        <h4>Itinerary</h4>
-        {trip.itinerary.map((day, index) => (
-          <div key={index}>
-            <h3>{day.day}</h3>
-            {day.activities.map((activity, index) => (
-              <div key={index}>
-                <h6>{activity.activityName}</h6>
-                <p>Where: {activity.location}</p>
-                <p>Time: {activity.time}</p>
-              </div>
-            ))}
-          </div>
-        ))}
+        <ItineraryBoard itinerary={trip.itinerary} />
       </div>
     </div>
   );

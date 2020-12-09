@@ -1,9 +1,43 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
 
-.app {
+body {
   background-color: #1a1822;
   color: white;
   height: 100vh;
   font-family: "Poppins", sans-serif;
-  font-size: 10px;
+  font-size: 20px;
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width: 321px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width: 768px) {
+  body {
+    font-size: 8px;
+  }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width: 1024px) {
+  body {
+    font-size: 12px;
+  }
+}
+/* Desktops and laptops ----------- */
+@media only screen and (min-width: 1275px) {
+  body {
+    font-size: 18px;
+  }
+}
+
+/* Large screens ----------- */
+@media only screen and (min-width: 1824px) {
+  body {
+    font-size: 26px;
+  }
 }

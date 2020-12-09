@@ -1,0 +1,51 @@
+.itineraryCard {
+  width: 25%;
+
+  background-color: #211f2c;
+  min-height: 30rem;
+  padding: 1.2rem;
+  border-radius: 32px;
+  box-shadow: 0 10px 10px #00000016;
+  transition: 0.2s;
+}
+
+.itineraryCard:hover {
+  box-shadow: 0 15px 50px #00000016;
+  transform: translateY(-10px);
+}
+
+.cardLabel {
+  font-weight: 600;
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.dayCard {
+  padding: 1.2rem;
+  min-height: 5rem;
+  display: flex;
+  border-radius: 17px;
+  margin-bottom: 1rem;
+  align-items: center;
+  background-color: #2a2836;
+  box-shadow: 0 10px 10px #00000016;
+}
+
+.dayCardDay {
+  flex: 1;
+  font-size: 0.8em;
+  font-weight: 600;
+  color: #aeffd1;
+}
+
+.dayCardActivity {
+  flex: 3;
+  font-size: 1.2em;
+}
+
+.dayCardTime {
+  flex: 1;
+  color: #e4ffae;
+  font-weight: 600;
+  font-size: 0.7em;
+}
