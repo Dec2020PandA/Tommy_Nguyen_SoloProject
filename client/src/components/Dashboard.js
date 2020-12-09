@@ -5,7 +5,6 @@ export default (props) => {
 
   return (
     <div>
-      <h1>{trip.tripName}</h1>
       <h3>{trip.location}</h3>
       <div>
         <h4>Expenses</h4>

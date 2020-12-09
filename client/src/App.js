@@ -1,4 +1,5 @@
 import { Router } from "@reach/router";
+import styles from "./css-modules/App.module.css";
 
 //Import Views
 import Main from "./views/Main";
@@ -11,7 +12,7 @@ import TodoView from "./views/TodoView";
 
 function App() {
   return (
-    <div>
+    <div className={styles.app}>
       <Router>
         <Main default />
         <DashboardView path="/user/:id/trips/:tripId/dashboard/" />

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Dashboard from "../components/Dashboard";
 import SideBar from "../components/Sidebar";
+import TopNav from "../components/TopNav";
 
 import axios from "axios";
 
@@ -32,7 +33,13 @@ export default (props) => {
   return (
     <div className="d-flex">
       <SideBar />
-      {loaded && <Dashboard trip={trip} />}
+
+      <div className="d-flex flex-column w-100">
+        {loaded && (
+          <TopNav userName={user.firstName} tripName={trip.tripName} />
+        )}
+        {loaded && <Dashboard trip={trip} />}
+      </div>
     </div>
   );
 };

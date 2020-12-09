@@ -1,0 +1,30 @@
+.sideBar {
+  height: 100vh;
+  border-right: 1px solid #39344f;
+  width: 12rem;
+}
+
+.navBtn {
+  background-color: transparent;
+  border: none;
+  border-radius: 10px;
+  width: 100%;
+  height: 3rem;
+  margin-bottom: 2rem;
+  font-size: 0.8rem;
+  color: #6c6683;
+  transition: 0.1s;
+}
+
+.navBtn:hover {
+  background-color: #6e56ce;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  display: inline-block;
+  width: 100%;
+  height: 3rem;
+  margin-bottom: 2rem;
+  font-size: 0.8rem;
+  color: white;
+}
