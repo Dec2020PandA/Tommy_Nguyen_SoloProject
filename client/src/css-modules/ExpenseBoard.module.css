@@ -1,4 +1,4 @@
-.itineraryCard {
+.dashCard {
   width: 20%;
   display: flex;
   justify-content: flex-start;
@@ -13,8 +13,24 @@
   transition: 0.2s;
 }
 
-.itineraryCard:hover {
+.dashCard:hover {
   box-shadow: 0 15px 20px #00000016;
+}
+
+.totalBudgetContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.totalBudget {
+  font-weight: 600;
+  font-size: 2em;
+}
+
+.currency {
+  color: #4a465e;
+  font-size: 1.5em;
 }
 
 .cardLabel {
@@ -23,7 +39,7 @@
   margin-bottom: 1rem;
 }
 
-.dayCard {
+.expenseCard {
   padding: 1.2rem;
   min-height: 3rem;
   max-height: 4.5rem;
@@ -31,48 +47,25 @@
   border-radius: 17px;
   margin-bottom: 1rem;
   align-items: center;
-  background-color: #2a2836;
+  background-color: #3e3a55;
   box-shadow: 0 10px 10px #00000016;
 }
 
-.dayCardDay {
+.expenseCardIcon {
   flex: 1;
   font-size: 0.65em;
   font-weight: 600;
   color: #aeffd1;
 }
 
-.dayCardActivity {
+.expenseCardName {
   flex: 3;
   font-size: 1em;
 }
 
-.dayCardTime {
+.expenseCardPrice {
   flex: 1;
   color: #e4ffae;
   font-weight: 600;
   font-size: 0.55em;
-}
-
-.planBtn {
-  outline: none;
-  align-self: center;
-  padding: 0.6rem 0;
-  font-size: 0.7em;
-  border-radius: 1rem;
-  color: white;
-  border: none;
-  width: 70%;
-  background-color: #ce566a;
-  box-shadow: 0 10px 10px #00000016;
-  transition: 0.2s;
-}
-
-.planBtn:hover {
-  box-shadow: 0 15px 50px #00000016;
-  transform: scale(1.02);
-}
-
-.planBtn:focus {
-  outline: none;
 }

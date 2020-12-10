@@ -1,25 +1,16 @@
 import React, { useState } from "react";
 
 import ItineraryBoard from "../components/ItineraryBoard";
+import ExpenseBoard from "../components/ExpenseBoard";
 
 export default (props) => {
   const [trip, setTrip] = useState(props.trip);
 
   return (
     <div>
-      <div>
-        <h4>Expenses</h4>
-        {trip.expenses.map((expense, index) => (
-          <div key={index}>
-            <p>
-              {expense.expenseName}: {expense.expensePrice}
-            </p>
-          </div>
-        ))}
-      </div>
-
-      <div>
+      <div className="d-flex m-4">
         <ItineraryBoard itinerary={trip.itinerary} />
+        <ExpenseBoard expenses={trip.expenses} />
       </div>
     </div>
   );
