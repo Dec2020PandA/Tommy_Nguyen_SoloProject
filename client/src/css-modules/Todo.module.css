@@ -1,0 +1,22 @@
+.todoCard {
+  padding: 0.8rem;
+  min-height: 3rem;
+  max-height: 4.5rem;
+  display: flex;
+  border-radius: 17px;
+  margin-bottom: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #c5b382;
+  box-shadow: 0 5px 5px 5px #00000016;
+}
+
+.todoCard p {
+  margin: 0;
+  padding: 0;
+}
+
+.todoCardTodo {
+  font-size: 0.6em;
+  font-weight: 600;
+}

@@ -1,0 +1,25 @@
+.dashCard {
+  margin-left: 2rem;
+  display: flex;
+  margin-right: 2rem;
+  width: 15%;
+  height: 35vh;
+  flex-direction: column;
+  background-color: #211f2c;
+  padding: 1.2rem;
+  border-radius: 32px;
+  box-shadow: 0 15px 10px #00000016;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.dashCard:hover {
+  box-shadow: 0 15px 20px #00000016;
+}
+
+.cardLabel {
+  font-weight: 600;
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+}
