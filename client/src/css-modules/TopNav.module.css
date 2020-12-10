@@ -9,7 +9,14 @@
 
 .tripName {
   font-size: 1.4em;
+  padding: 0;
+  margin: 0;
   font-weight: 600;
+}
+
+.tripLocation {
+  font-size: 0.7em;
+  color: #6c6683;
 }
 
 .profileGroup {

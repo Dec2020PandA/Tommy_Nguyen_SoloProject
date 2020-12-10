@@ -36,7 +36,11 @@ export default (props) => {
 
       <div className="d-flex flex-column w-100">
         {loaded && (
-          <TopNav userName={user.firstName} tripName={trip.tripName} />
+          <TopNav
+            userName={user.firstName}
+            tripLocation={trip.location}
+            tripName={trip.tripName}
+          />
         )}
         {loaded && <Dashboard trip={trip} />}
       </div>

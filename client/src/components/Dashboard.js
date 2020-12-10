@@ -7,7 +7,6 @@ export default (props) => {
 
   return (
     <div>
-      <h3>{trip.location}</h3>
       <div>
         <h4>Expenses</h4>
         {trip.expenses.map((expense, index) => (

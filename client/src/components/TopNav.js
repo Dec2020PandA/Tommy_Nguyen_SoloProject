@@ -5,7 +5,10 @@ import styles from "../css-modules/TopNav.module.css";
 export default (props) => {
   return (
     <div className={`pt-3 pl-4 pr-4 ${styles.topNav}`}>
-      <h1 className={styles.tripName}>{props.tripName}</h1>
+      <div>
+        <h1 className={styles.tripName}>{props.tripName}</h1>
+        <h3 className={styles.tripLocation}>{props.tripLocation}</h3>
+      </div>
 
       <div className={styles.profileGroup}>
         <div className={styles.profileText}>

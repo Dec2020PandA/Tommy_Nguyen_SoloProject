@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "@reach/router";
 
 import styles from "../css-modules/ItineraryBoard.module.css";
 
@@ -17,6 +18,8 @@ export default (props) => {
           <p className={styles.dayCardTime}>{day.activities[0].time}</p>
         </div>
       ))}
+
+      <button className={styles.planBtn}>Plan More</button>
     </div>
   );
 };
