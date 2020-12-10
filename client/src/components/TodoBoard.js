@@ -14,6 +14,8 @@ export default (props) => {
       {todoList.map((todo, index) => (
         <Todo todoName={todo.todoName} completed={todo.completed} />
       ))}
+
+      <button className={styles.planBtn}>Add More</button>
     </div>
   );
 };

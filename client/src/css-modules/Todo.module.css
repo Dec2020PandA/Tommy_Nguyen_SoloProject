@@ -17,6 +17,11 @@
 }
 
 .todoCardTodo {
-  font-size: 0.6em;
+  user-select: none;
+  font-size: 0.75em;
   font-weight: 600;
+}
+
+.todoCompleted {
+  user-select: none;
 }

@@ -12,7 +12,7 @@ export default (props) => {
   return (
     <div className={styles.todoCard} onClick={toggleComplete}>
       <p className={styles.todoCardTodo}>{props.todoName}</p>
-      <p>{completed ? "C" : "O"}</p>
+      <p className={styles.todoCompleted}>{completed ? "C" : "O"}</p>
     </div>
   );
 };
