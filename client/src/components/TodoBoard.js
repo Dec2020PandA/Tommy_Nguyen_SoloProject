@@ -12,7 +12,7 @@ export default (props) => {
     <div className={styles.dashCard}>
       <h6 className={styles.cardLabel}>Todo</h6>
       {todoList.map((todo, index) => (
-        <Todo todoName={todo.todoName} completed={todo.completed} />
+        <Todo key={index} todoName={todo.todoName} completed={todo.completed} />
       ))}
 
       <button className={styles.planBtn}>Add More</button>

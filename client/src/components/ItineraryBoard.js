@@ -10,7 +10,7 @@ export default (props) => {
     <div className={styles.itineraryCard}>
       <h6 className={styles.cardLabel}>Itinerary</h6>
       {itinerary.map((day, index) => (
-        <div className={styles.dayCard}>
+        <div key={index} className={styles.dayCard}>
           <p className={styles.dayCardDay}>{day.day}</p>
           <p className={styles.dayCardActivity}>
             {day.activities[0].activityName}{" "}

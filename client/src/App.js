@@ -14,7 +14,7 @@ function App() {
   return (
     <div className={styles.app}>
       <Router>
-        <Main default />
+        <Main default path="/login" />
         <DashboardView path="/user/:id/trips/:tripId/dashboard/" />
         <TripListView path="/user/:id/trips" />
         <AddTripView path="/user/:id/trips/new" />

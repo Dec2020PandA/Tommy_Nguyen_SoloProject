@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-
+import React, { useState, useEffect } from "react";
+import axios from "axios";
 import ItineraryBoard from "../components/ItineraryBoard";
 import ExpenseBoard from "../components/ExpenseBoard";
 import TodoBoard from "../components/TodoBoard";
@@ -10,6 +10,7 @@ import styles from "../css-modules/Dashboard.module.css";
 export default (props) => {
   const [trip, setTrip] = useState(props.trip);
 
+  console.log(props);
   return (
     <div>
       <div className={styles.dashboard}>

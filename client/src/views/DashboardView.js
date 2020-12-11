@@ -1,7 +1,14 @@
 import React, { useState, useEffect } from "react";
+
 import Dashboard from "../components/Dashboard";
+import ItineraryView from "../views/ItineraryView";
+import BudgetView from "../views/BudgetView";
+import TodoView from "../views/TodoView";
+
 import SideBar from "../components/Sidebar";
 import TopNav from "../components/TopNav";
+
+import { Router } from "@reach/router";
 
 import axios from "axios";
 
@@ -29,7 +36,7 @@ export default (props) => {
     fetchData();
   }, []);
 
-  console.log(trip);
+  console.log(props);
   return (
     <div className="d-flex">
       <SideBar />
@@ -42,7 +49,12 @@ export default (props) => {
             tripName={trip.tripName}
           />
         )}
-        {loaded && <Dashboard trip={trip} />}
+
+        {loaded && (
+          <Router>
+            <Dashboard default trip={trip} />
+          </Router>
+        )}
       </div>
     </div>
   );
