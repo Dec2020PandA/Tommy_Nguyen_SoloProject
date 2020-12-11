@@ -5,6 +5,8 @@ import ExpenseBoard from "../components/ExpenseBoard";
 import TodoBoard from "../components/TodoBoard";
 import WeatherBoard from "../components/WeatherBoard";
 
+import { Link } from "@reach/router";
+
 import styles from "../css-modules/Dashboard.module.css";
 
 export default (props) => {

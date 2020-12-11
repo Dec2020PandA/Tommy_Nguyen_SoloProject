@@ -1,9 +1,17 @@
 import React from "react";
 
-export default () => {
+import styles from "../css-modules/TodoView.module.css";
+
+export default (props) => {
+  console.log(props.todos);
   return (
     <div>
-      <h1>Todo</h1>
+      {props.todos.map((todo, index) => (
+        <div key={index}>
+          <h1>{todo.todoName}</h1>
+          <div>{todo.completed ? "O" : "C"} </div>
+        </div>
+      ))}
     </div>
   );
 };

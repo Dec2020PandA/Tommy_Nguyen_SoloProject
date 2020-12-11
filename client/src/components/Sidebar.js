@@ -7,16 +7,16 @@ export default () => {
   return (
     <div className={`pt-3 pl-3 pr-3 ${styles.sideBar}`}>
       <h1 className="mb-4">LOGO</h1>
-      <Link to="/">
+      <Link to="">
         <button className={`${styles.navBtn}`}>Overview</button>
       </Link>
-      <Link to="/">
+      <Link to="itinerary">
         <button className={`${styles.navBtn}`}>Itinerary</button>
       </Link>
-      <Link to="/">
+      <Link to="budget">
         <button className={`${styles.navBtn}`}>Budget</button>
       </Link>
-      <Link to="/">
+      <Link to="todo">
         <button className={`${styles.navBtn}`}>To Do</button>
       </Link>
     </div>

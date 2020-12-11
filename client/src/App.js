@@ -15,12 +15,9 @@ function App() {
     <div className={styles.app}>
       <Router>
         <Main default path="/login" />
-        <DashboardView path="/user/:id/trips/:tripId/dashboard/" />
+        <DashboardView path="/user/:id/trips/:tripId/dashboard/*" />
         <TripListView path="/user/:id/trips" />
         <AddTripView path="/user/:id/trips/new" />
-        <ItineraryView path="/dashboard/itinerary" />
-        <BudgetView path="/dashboard/budget" />
-        <TodoView path="/dashboard/todo" />
       </Router>
     </div>
   );
