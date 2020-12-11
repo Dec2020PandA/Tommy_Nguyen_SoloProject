@@ -1,0 +1,78 @@
+.todoList {
+  display: flex;
+  margin: 1rem;
+  flex-wrap: wrap;
+}
+
+.todoCard {
+  padding: 1.1rem 1.2rem;
+  width: 13%;
+  height: 8vh;
+  display: flex;
+  border-radius: 17px;
+  margin: 1rem;
+  justify-content: space-between;
+
+  background-color: #2a2836;
+  box-shadow: 0 5px 5px 5px #00000016;
+}
+
+.todoCardTodo {
+  user-select: none;
+  margin: 0;
+  padding: 0;
+  font-size: 0.6em;
+  font-weight: 600;
+}
+
+.todoCompleted {
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  align-self: center;
+  color: #8269c6;
+}
+
+.inputGroup {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.todoInput {
+  width: 30%;
+  padding: 1rem 1.2rem;
+  color: white;
+  background-color: #211f2c;
+  border: none;
+  border-radius: 1rem;
+  outline: none;
+  font-size: 1rem;
+}
+
+.todoInput::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #6c6683;
+  opacity: 1; /* Firefox */
+}
+
+.todoInput:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #6c6683;
+}
+
+.todoInput::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #6c6683;
+}
+
+.todoSubmit {
+  margin-left: 1.5rem;
+  align-self: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border: none;
+  outline: none;
+  border-radius: 50%;
+  background-color: #8269c6;
+}

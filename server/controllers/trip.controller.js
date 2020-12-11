@@ -26,6 +26,19 @@ module.exports.createTrip = (req, res) => {
     .catch((err) => res.json(err));
 };
 
+module.exports.createTodo = (req, res) => {
+  Trip.findOneAndUpdate(
+    { _id: req.params.id },
+    {
+      $push: {
+        todo: { todoName: req.body.todoName, completed: req.body.completed },
+      },
+    }
+  )
+    .then((updatedTrip) => res.json(updatedTrip))
+    .catch((err) => res.json(err));
+};
+
 module.exports.updateTrip = (req, res) => {
   Trip.findOneAndUpdate({ _id: req.params.id }, req.body, {
     new: true,
