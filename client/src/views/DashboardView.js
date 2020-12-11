@@ -53,7 +53,7 @@ export default (props) => {
         {loaded && (
           <Router>
             <Dashboard path="/" trip={trip} />
-            <ItineraryView path="itinerary" />
+            <ItineraryView path="itinerary" itinerary={trip.itinerary} />
             <BudgetView path="budget" />
             <TodoView path="todo" todos={trip.todo} />
           </Router>

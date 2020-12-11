@@ -1,0 +1,35 @@
+.dayList {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+}
+
+.dayCard {
+  display: flex;
+  padding: 1.5rem;
+  width: 33%;
+  background-color: #211f2c;
+  border-radius: 32px;
+  box-shadow: 0 15px 15px #00000016;
+}
+
+.dayText {
+  margin-right: 2rem;
+  font-size: 0.85em;
+
+  font-weight: 600;
+}
+
+.dayCardActivity {
+  padding: 0;
+  font-weight: 600;
+  font-size: 1.65em;
+  color: #aeffd1;
+}
+
+.dayCardLocation {
+  padding: 0;
+  font-size: 0.8em;
+  font-weight: 600;
+  color: #6c6683;
+}
