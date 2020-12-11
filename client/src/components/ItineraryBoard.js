@@ -11,10 +11,8 @@ export default (props) => {
       <h6 className={styles.cardLabel}>Itinerary</h6>
       {itinerary.map((day, index) => (
         <div key={index} className={styles.dayCard}>
-          <p className={styles.dayCardDay}>{day.day}</p>
-          <p className={styles.dayCardActivity}>
-            {day.activities[0].activityName}{" "}
-          </p>
+          <p className={styles.dayCardDay}>{index + 1}</p>
+          <p className={styles.dayCardActivity}>{day.mainActivity} </p>
           <p className={styles.dayCardTime}>{day.activities[0].time}</p>
         </div>
       ))}

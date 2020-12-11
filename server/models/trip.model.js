@@ -14,7 +14,10 @@ const ActivityScehma = new mongoose.Schema({
 });
 
 const ItinerarySchema = new mongoose.Schema({
-  day: {
+  mainActivity: {
+    type: String,
+  },
+  mainLocation: {
     type: String,
   },
   activities: [ActivityScehma],

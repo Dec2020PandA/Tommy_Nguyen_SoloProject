@@ -1,22 +1,37 @@
 .dayList {
+  width: 50%;
   display: flex;
   flex-direction: column;
   margin: 2rem;
 }
 
 .dayCard {
+  margin: 1rem;
   display: flex;
   padding: 1.5rem;
-  width: 33%;
+  width: 60%;
   background-color: #211f2c;
   border-radius: 32px;
-  box-shadow: 0 15px 15px #00000016;
+  box-shadow: 0 15px 10px #00000016;
+}
+
+.dayContainer {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  margin-right: 2rem;
+}
+
+.dayLabel {
+  font-weight: 600;
+  color: #6c6683;
+  font-size: 0.7em;
 }
 
 .dayText {
-  margin-right: 2rem;
-  font-size: 0.85em;
-
+  color: #aeffd1;
+  font-size: 1.65em;
+  align-self: center;
   font-weight: 600;
 }
 
@@ -24,7 +39,6 @@
   padding: 0;
   font-weight: 600;
   font-size: 1.65em;
-  color: #aeffd1;
 }
 
 .dayCardLocation {
@@ -32,4 +46,69 @@
   font-size: 0.8em;
   font-weight: 600;
   color: #6c6683;
+}
+
+.dayForm {
+  margin: 2rem;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.dayInput {
+  margin: 1rem;
+  text-align: center;
+  width: 80%;
+  padding: 1rem 1.2rem;
+  color: white;
+  background-color: #211f2c;
+  border: none;
+  border-radius: 1rem;
+  outline: none;
+  font-size: 1rem;
+}
+
+.dayInput::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #6c6683;
+  opacity: 1; /* Firefox */
+}
+
+.dayInput:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #6c6683;
+}
+
+.dayInput::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #6c6683;
+}
+
+.dayBtn {
+  user-select: none;
+  margin: 2rem 0;
+  outline: none;
+  justify-self: center;
+  align-self: center;
+  padding: 0.6rem 0;
+  font-size: 0.8em;
+  font-weight: 600;
+  border-radius: 1rem;
+  color: white;
+  border: none;
+  width: 50%;
+  background-color: #7f61d0;
+  box-shadow: 0 10px 10px #00000016;
+  transition: 0.2s;
+}
+
+.dayBtn:hover {
+  box-shadow: 0 15px 50px #00000016;
+  transform: scale(1.02);
+}
+
+.dayBtn:focus {
+  outline: none;
 }
