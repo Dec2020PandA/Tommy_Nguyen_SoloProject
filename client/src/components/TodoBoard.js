@@ -29,7 +29,7 @@ export default (props) => {
             />
           ))
         : todoList
-            .slice(0, 6)
+            .slice(0, 5)
             .map((todo, index) => (
               <Todo
                 key={index}
