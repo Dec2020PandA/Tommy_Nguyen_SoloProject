@@ -62,13 +62,17 @@ export default (props) => {
       .catch((err) => console.log(err));
   };
 
-  console.log(activities);
+  console.log(tripIndex);
   return (
     <div className={styles.container}>
       <div className={styles.left}>
         <div className={styles.dayList}>
           {itinerary.map((day, index) => (
-            <div className={styles.dayCard} key={index}>
+            <div
+              className={styles.dayCard}
+              key={index}
+              onClick={(e) => setTripIndex(index)}
+            >
               <div className={styles.dayContainer}>
                 <h2 className={styles.dayLabel}>Day</h2>
                 <h1 className={styles.dayText}>{index + 1}</h1>
