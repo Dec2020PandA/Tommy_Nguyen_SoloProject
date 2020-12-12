@@ -39,13 +39,24 @@
   margin: 0;
   padding: 0;
 }
+.dayContainer {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  margin-right: 2rem;
+}
+
+.dayLabel {
+  font-weight: 600;
+  color: #6c6683;
+  font-size: 0.7em;
+}
 
 .dayCardDay {
-  word-wrap: break-word;
-  flex: 1;
-  font-size: 0.65em;
-  font-weight: 600;
   color: #aeffd1;
+  font-size: 1.05em;
+  align-self: center;
+  font-weight: 600;
 }
 
 .dayCardActivity {

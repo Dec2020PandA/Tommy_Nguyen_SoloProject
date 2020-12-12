@@ -42,12 +42,10 @@ export default (props) => {
                 <h2 className={styles.dayLabel}>Day</h2>
                 <h1 className={styles.dayText}>{index + 1}</h1>
               </div>
-              {day.activities[0].activityName && (
-                <div>
-                  <h1 className={styles.dayCardActivity}>{day.mainActivity}</h1>
-                  <h3 className={styles.dayCardLocation}>{day.mainLocation}</h3>
-                </div>
-              )}
+              <div>
+                <h1 className={styles.dayCardActivity}>{day.mainActivity}</h1>
+                <h3 className={styles.dayCardLocation}>{day.mainLocation}</h3>
+              </div>
             </div>
           ))}
 
