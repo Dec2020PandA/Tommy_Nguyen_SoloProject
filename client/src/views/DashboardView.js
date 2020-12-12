@@ -54,7 +54,7 @@ export default (props) => {
           <Router>
             <Dashboard path="/" trip={trip} />
             <ItineraryView path="itinerary" itinerary={trip.itinerary} />
-            <BudgetView path="budget" />
+            <BudgetView path="budget" expenses={trip.expenses} />
             <TodoView path="todo" todos={trip.todo} />
           </Router>
         )}

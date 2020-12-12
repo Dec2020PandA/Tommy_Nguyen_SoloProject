@@ -39,6 +39,22 @@ module.exports.createTodo = (req, res) => {
     .catch((err) => res.json(err));
 };
 
+module.exports.createBudget = (req, res) => {
+  Trip.findOneAndUpdate(
+    { _id: req.params.id },
+    {
+      $push: {
+        expenses: {
+          expenseName: req.body.expenseName,
+          expensePrice: req.body.expensePrice,
+        },
+      },
+    }
+  )
+    .then((updatedTrip) => res.json(updatedTrip))
+    .catch((err) => res.json(err));
+};
+
 module.exports.createDay = (req, res) => {
   Trip.findOneAndUpdate(
     { _id: req.params.id },
