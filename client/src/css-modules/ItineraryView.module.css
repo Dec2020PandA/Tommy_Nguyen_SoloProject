@@ -123,6 +123,14 @@
   transform: scale(1.02);
 }
 
+.dayActivity {
+  font-weight: 600;
+}
+
+.dayNo {
+  color: #aeffd1;
+}
+
 .activityList {
   width: 85%;
   display: flex;

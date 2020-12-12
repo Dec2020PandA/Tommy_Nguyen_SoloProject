@@ -105,6 +105,9 @@ export default (props) => {
       </div>
       <div className={styles.right}>
         <div className={styles.activityList}>
+          <h1 className={styles.dayActivity}>
+            Day <span className={styles.dayNo}>{tripIndex + 1}</span> Activities
+          </h1>
           {itinerary[tripIndex].activities.map((activity, index) => (
             <div key={index} className={styles.activityGroup}>
               <h3 className={styles.activityTime}>{activity.time}</h3>
