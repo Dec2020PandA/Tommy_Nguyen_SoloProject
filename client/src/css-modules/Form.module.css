@@ -1,0 +1,65 @@
+.switchBtn {
+  font-size: 0.7em;
+  margin-top: 1rem;
+  color: #6c6683;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.formInput {
+  width: 100%;
+  padding: 1rem 1.2rem;
+  margin: 1rem 0;
+  color: white;
+  background-color: #211f2c;
+  border: none;
+  border-radius: 1rem;
+  outline: none;
+  font-size: 1rem;
+}
+
+.formInput::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #6c6683;
+  opacity: 1; /* Firefox */
+}
+
+.formInput:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #6c6683;
+}
+
+.formInput::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #6c6683;
+}
+
+.btn {
+  user-select: none;
+  outline: none;
+  display: block;
+  margin-top: 1rem;
+  padding: 0.6rem 0;
+  font-size: 0.8em;
+  font-weight: 600;
+  border-radius: 1rem;
+  color: white;
+  border: none;
+  width: 50%;
+  background-color: #6e56ce;
+  box-shadow: 0 10px 10px #00000016;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  box-shadow: 0 15px 50px #00000016;
+  transform: scale(1.02);
+}
+
+.btn:focus {
+  outline: none;
+}
