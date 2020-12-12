@@ -56,6 +56,23 @@ module.exports.createDay = (req, res) => {
     .catch((err) => res.json(err));
 };
 
+module.exports.createActivity = (req, res) => {
+  Trip.findOneAndUpdate(
+    { "itinerary._id": req.params.id },
+    {
+      $push: {
+        "itinerary.$.activities": {
+          activityName: req.body.activityName,
+          time: req.body.time,
+          location: req.body.location,
+        },
+      },
+    }
+  )
+    .then((updatedTrip) => res.json(updatedTrip))
+    .catch((err) => console.log(err));
+};
+
 module.exports.updateTrip = (req, res) => {
   Trip.findOneAndUpdate({ _id: req.params.id }, req.body, {
     new: true,
