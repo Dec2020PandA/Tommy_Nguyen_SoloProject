@@ -9,7 +9,7 @@ export default (props) => {
   return (
     <div className={styles.weatherCard}>
       <h1 className={styles.weatherDate}>Day {props.index + 1}</h1>
-      <div className={styles.weatherIcon}>ICON</div>
+      {/* <div className={styles.weatherIcon}>ICON</div> */}
       <p className={styles.weatherTemps}>
         <span>{Math.floor((props.day.temp.min - 273.15) * (9 / 5) + 32)}°</span>
         /
