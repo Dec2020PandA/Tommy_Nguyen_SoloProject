@@ -4,7 +4,7 @@ import { Link } from "@reach/router";
 import styles from "../css-modules/ExpenseBoard.module.css";
 
 export default (props) => {
-  const [expenses] = useState(props.expenses);
+  const [expenses, setExpenses] = useState(props.expenses);
   const [total, setTotal] = useState();
 
   useEffect(() => {
@@ -26,13 +26,25 @@ export default (props) => {
           <h1 className={styles.totalBudget}>{total}</h1>
           <h3 className={styles.currency}>USD</h3>
         </div>
-        {expenses.map((expense, index) => (
-          <div key={index} className={styles.expenseCard}>
-            <p className={styles.expenseCardIcon}>ICON</p>
-            <p className={styles.expenseCardName}>{expense.expenseName} </p>
-            <p className={styles.expenseCardPrice}>${expense.expensePrice}</p>
-          </div>
-        ))}
+        {expenses <= 3
+          ? expenses.map((expense, index) => (
+              <div key={index} className={styles.expenseCard}>
+                <p className={styles.expenseCardIcon}>ICON</p>
+                <p className={styles.expenseCardName}>{expense.expenseName} </p>
+                <p className={styles.expenseCardPrice}>
+                  ${expense.expensePrice}
+                </p>
+              </div>
+            ))
+          : expenses.slice(0, 3).map((expense, index) => (
+              <div key={index} className={styles.expenseCard}>
+                <p className={styles.expenseCardIcon}>ICON</p>
+                <p className={styles.expenseCardName}>{expense.expenseName} </p>
+                <p className={styles.expenseCardPrice}>
+                  ${expense.expensePrice}
+                </p>
+              </div>
+            ))}
       </div>
     </div>
   );

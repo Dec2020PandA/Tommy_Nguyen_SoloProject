@@ -4,6 +4,8 @@ import { Link } from "@reach/router";
 import TripList from "../components/TripList";
 import axios from "axios";
 
+import styles from "../css-modules/TripList.module.css";
+
 export default (props) => {
   const [user, setUser] = useState({});
   const [trips, setTrips] = useState();
@@ -31,13 +33,11 @@ export default (props) => {
   console.log(user);
   console.log(trips);
   return (
-    <div className="container-md mt-4 ">
+    <div className="container mt-4  ">
       <div className="d-flex justify-content-between align-items-center border-bottom">
         <h1>{user.firstName}'s Trips</h1>
         <Link to={`/user/${props.id}/trips/new`}>
-          <button className="d-inline-block btn btn-sm btn-primary h-75 ">
-            Add Trip
-          </button>
+          <button className={styles.btn}>Add Trip</button>
         </Link>
       </div>
       {loaded && <TripList userId={props.id} trips={trips} />}

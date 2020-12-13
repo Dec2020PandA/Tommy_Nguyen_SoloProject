@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import { navigate } from "@reach/router";
+
+import styles from "../css-modules/Form.module.css";
+
 import axios from "axios";
 
 export default (props) => {
@@ -32,30 +35,30 @@ export default (props) => {
   };
   return (
     <form
-      className="container-md mt-4 d-flex flex-column align-items-center"
+      className="container mt-4 d-flex flex-column align-items-center"
       onSubmit={createTrip}
     >
-      <h1 className="mb-4">Let's Plan a New Trip!</h1>
-      <div className="form-group w-75">
-        <label className="form-label text-black-50">Trip Name</label>
+      <h1 className={styles.header}>Let's Plan a New Trip!</h1>
+      <div className={styles.formGroup}>
         <input
           type="text"
-          className="form-control"
+          className={styles.formInput}
           value={tripName}
+          placeholder="Trip Name"
           onChange={(e) => setTripName(e.target.value)}
         />
       </div>
-      <div className="form-group w-75">
-        <label className="form-label text-black-50">Location</label>
+      <div className={styles.formGroup}>
         <input
           type="text"
-          className="form-control"
+          className={styles.formInput}
           value={location}
+          placeholder="Trip Location"
           onChange={(e) => setLocation(e.target.value)}
         />
       </div>
 
-      <input type="submit" className="btn btn-md btn-primary" />
+      <input type="submit" className={styles.btn} />
     </form>
   );
 };

@@ -6,16 +6,7 @@ import Todo from "../components/Todo";
 import styles from "../css-modules/TodoBoard.module.css";
 
 export default (props) => {
-  const [todoList, setTodoList] = useState([]);
-
-  useEffect(() => {
-    if (props.todos > 6) {
-      var shortTodo = todoList.slice(0, 6);
-      setTodoList(shortTodo);
-    } else {
-      setTodoList(props.todos);
-    }
-  });
+  const [todoList, setTodoList] = useState(props.todos);
 
   return (
     <div className={styles.dashCard}>
