@@ -1,8 +1,7 @@
 .dashCard {
   margin-top: 2rem;
   display: flex;
-  margin-right: 2rem;
-  width: 50%;
+  width: 45%;
   height: 22vh;
   flex-direction: column;
   background-color: #211f2c;

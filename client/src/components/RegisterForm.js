@@ -30,7 +30,7 @@ export default () => {
           setErrors(res.data.errors);
           console.log(errors);
         } else {
-          navigate("/login");
+          navigate("/");
         }
         console.log(res.data);
       })
